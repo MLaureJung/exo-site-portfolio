@@ -1,0 +1,22 @@
+.grids {
+    width: 80%;
+    margin: 25px auto; 
+    padding: 35 0px;
+    color: $color-grid;
+    background-color: rgb(240, 241, 252);
+    border: 1px solid $color-border;
+    border-radius: 10px;
+}
+
+
+
+@media (min-width:500px){
+    .grids {
+        padding: 50px 50px;
+        &__row--first,
+        &__row--second,
+        &__row--third {
+            display: flex; 
+        }
+    }
+}

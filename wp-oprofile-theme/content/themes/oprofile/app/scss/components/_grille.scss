@@ -1,0 +1,43 @@
+.grid {
+    position: relative; 
+    border-bottom:1px solid $color-border;
+    &__title {
+        font-weight: bold; 
+        margin-bottom: 20px;
+        margin: 35px;
+    }
+    &__content {
+        margin: 35px;
+    }
+    &__button {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        width: 40px;
+        height: 40px;
+        background: $color-button;
+        border-radius: 10px;
+        color: $color-main;
+        position: absolute;
+        top: -20px;
+        right: 20px;
+    }
+}
+
+
+@media (min-width:500px){
+    .grid {
+        &__title {
+            margin: 45px;
+        }
+        &__content {
+            margin: 45px;
+        }
+        &__button {
+            top: 10px;
+            left: -10px;
+        }
+    }
+
+
+}

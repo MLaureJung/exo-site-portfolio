@@ -21,9 +21,9 @@ $fa-font-path: '~font-awesome/fonts';
 // 4. Layout
 @import
     'layout/articles',
-    'layout/navigation',
     'layout/main',
-    'layout/header';
+    'layout/header',
+    'layout/grilles';
     
 
 // 5. Components
@@ -31,7 +31,8 @@ $fa-font-path: '~font-awesome/fonts';
     'components/article',
     'components/intro',
     'components/burger-menu',
-    'components/buttons';
+    'components/buttons',
+    'components/grille';
 
 
 // 6. Pages
