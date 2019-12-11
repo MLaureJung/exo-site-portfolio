@@ -3,10 +3,12 @@
     background-image: url('../assets/images/see.jpg');
     background-size: cover;
     background-position: center center;
-    padding: 100px;
+    // padding: 100px;
     &__container {
-        width: 100%;
-        margin-top: 300px;
+        width: calc(100% - 200px);
+        padding-top: 300px;
+        padding-left: 100px;
+        padding-right: 100px;
         a {
             color: $color-main;
         }
@@ -15,9 +17,11 @@
         font-size: $large-font-size;
         font-weight: bold;
         margin-bottom: 40px;
+        width: 100%;
     }  
     &__content {
         margin-bottom: 40px;
+        width: 100%;
     }
 
 }
@@ -36,8 +40,8 @@
   @media (min-width:1000px){
     .intro {
         &__container {
-            width: 90%;
-            margin-top: 400px;
+            width: calc(90% - 200);
+            padding-top: 400px;
         }
         &__title {
             width: 40%;

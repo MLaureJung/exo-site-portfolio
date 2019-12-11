@@ -1,0 +1,16 @@
+.post {
+    padding: 40px 40px;
+    &__title {
+        border-bottom: 3px solid $color-main;
+        padding-bottom: 5px;
+        h3 {
+        font-size: $medium-font-size;
+        text-transform: uppercase;
+        font-weight: bold;
+        }
+    }
+    &__content {
+        font-weight: bold;
+        margin-top: 30px;
+    }
+}
