@@ -1,0 +1,21 @@
+@import url(https://fonts.googleapis.com/css?family=Vollkorn|Roboto);
+
+html {
+    font-size: $default-font-size;
+    color: $color-main;
+}
+
+body,
+input {
+    font-family: $font-family;
+}
+
+// body {
+//     border: 20px solid $main-color;
+//     padding: 2.5em 2em 1.5em 3em;
+// }
+
+a {
+    text-decoration: none;
+    color: $color-main;
+}

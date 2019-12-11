@@ -1,0 +1,49 @@
+.intro {
+    min-height: 100vh;
+    background-image: url('../assets/images/see.jpg');
+    background-size: cover;
+    background-position: center center;
+    padding: 100px;
+    &__container {
+        width: 100%;
+        margin-top: 300px;
+        a {
+            color: $color-main;
+        }
+    }
+    &__title {
+        font-size: $large-font-size;
+        font-weight: bold;
+        margin-bottom: 40px;
+    }  
+    &__content {
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (min-width:700px){
+   
+    .intro {
+        &__title {
+            width: 80%;
+        }
+        &__content {
+            width: 80%;
+        }
+    }
+  }
+  @media (min-width:1000px){
+    .intro {
+        &__container {
+            width: 90%;
+            margin-top: 400px;
+        }
+        &__title {
+            width: 40%;
+        }
+        &__content {
+            width: 40%;
+        }
+    }
+  }

@@ -2,16 +2,41 @@
 @charset 'UTF-8';
 
 // 1. Abstracts
+@import
+    'abstracts/variables';
+
 
 // 2. Vendors
+@import
+    '~reset-css/sass/reset';
+
 $fa-font-path: '~font-awesome/fonts';
 @import '~font-awesome/scss/font-awesome';
 
 
 // 3. Base
+@import
+    'base/base';
 
 // 4. Layout
+@import
+    'layout/articles',
+    'layout/navigation',
+    'layout/main',
+    'layout/header';
+    
 
 // 5. Components
+@import
+    'components/article',
+    'components/intro',
+    'components/burger-menu',
+    'components/buttons';
+
 
 // 6. Pages
+
+
+// 7. Shame
+@import
+    'shame';

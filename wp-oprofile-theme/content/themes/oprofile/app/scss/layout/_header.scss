@@ -1,0 +1,19 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex; 
+    margin-top: 25px;
+    &__logo {
+        margin-left: 25px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    &__social {
+        margin-left: calc(50% - 177px);
+        a {
+            padding: 0 2px;
+        }
+    }
+}

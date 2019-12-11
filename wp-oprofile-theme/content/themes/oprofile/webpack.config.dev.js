@@ -77,6 +77,20 @@ let config = {
           }
         },
       },
+      // Images
+      {
+        test: /\.(jpg|jpeg|png|svg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]', // Nom du fichier généré
+              outputPath: 'images/', // Destination des fichiers dans le répertoire public
+              publicPath: '../images' // Chemin relatif depuis le fichier CSS vers le dossier des images
+            }
+          }
+        ]
+      },
     ]
   },
   // Configuration du serveur de développement qui rechargera automatiquement les contenus lors d'un changement

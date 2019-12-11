@@ -1,0 +1,25 @@
+
+// Attribuer des couleurs
+
+
+$main-font-size: 1em;
+$color-main: white;
+$color-button: rgb(14, 206, 240);
+
+$button-height: 27px;
+$button-width: 35px;
+
+
+
+// Gestion des fonts
+$default-font-size: 1.3em;
+$medium-font-size: 2em;
+$large-font-size: 2.2em;
+
+// Gestion des font familly
+$font-family: 'Roboto', sans-serif;
+$font-family-fallback: 'Helvetica', Arial, sans-serif;
+
+// Définition de la variable $fa-font-path nécessaire pour Font Awesome
+// On remplace la valeur par défaut de FA par celle-ci
+$fa-font-path: '~font-awesome/fonts';
