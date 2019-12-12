@@ -46,7 +46,7 @@ if (!function_exists('oprofile_setup')) {
 
         // Gestion des menus
         register_nav_menus([
-            'home' => 'Menu latéral de la page d\'accueil',
+            'home' => 'Menu burger full screen de la page d\'accueil',
             'page' => 'Menu latéral des autres pages'
         ]);
 

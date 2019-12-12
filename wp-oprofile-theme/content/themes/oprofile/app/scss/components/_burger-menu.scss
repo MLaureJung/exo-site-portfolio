@@ -84,7 +84,7 @@
   }
   nav {
     position: relative;
-    height: 70%;
+    height: 60%;
     top: 50%;
     transform: translateY(-50%);
     font-size: $default-font-size;
@@ -105,12 +105,12 @@
       position: relative;
       opacity: 0;
       margin: 25px 0;
-      &.social{
-        display: flex; 
-        a {
-          margin: 0 8px;
-        }
-      }
+      // &.social{
+      //   display: flex; 
+      //   a {
+      //     margin: 0 8px;
+      //   }
+      // }
       a {
         display: block;
         position: relative;
@@ -137,6 +137,15 @@
       }
     }
   }
+  .social {
+    width: 100%;
+    text-align: center; 
+    a {
+      margin: 0 4px;
+    }
+  
+  }
+  
 }
 
 @keyframes fadeInRight {
@@ -149,3 +158,4 @@
     left: 0;
   }
 }
+
