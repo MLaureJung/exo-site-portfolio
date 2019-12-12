@@ -1,0 +1,15 @@
+.contact {
+    font-size: .9em;
+    font-weight: bold;
+    background-color: $color-back;
+    padding: 15px;
+}
+
+@media (min-width:500px){
+    .contact {
+        display: flex; 
+        justify-content: space-between;
+    }
+
+
+}
