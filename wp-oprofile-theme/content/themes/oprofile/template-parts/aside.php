@@ -27,13 +27,11 @@
     echo $menu;
 
 ?>
-    <ul>
-      <li class="social">
-        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-      </li>
-      </ul>
+         <div class="social">
+          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+        </div>
     </div>
