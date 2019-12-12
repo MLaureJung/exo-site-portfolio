@@ -8,6 +8,8 @@
 </head>
 <body>
 
+
+
   <main id="wrapper">
     <header class="header">
       <h1 class="header__logo">oprofile</h1>
@@ -23,7 +25,7 @@
         </ul>
       </div>
     </header>
-    <section class="intro">
+    <section id="homepage" class="intro">
       <div class="intro__container">
         <h2 class="intro__title">Hello, je suis Miss Kaplan</h2>
         <p class="intro__content">Une développeuse WP Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident expedita doloribus hic eos maiores corporis error sed voluptates libero minus.</p>
@@ -33,7 +35,7 @@
         </div>
       </div>
     </section>
-    <section class="posts">
+    <section id="blog" class="posts">
       <div class="posts__row--top">
       <article class="post" style=" background-image: url('/images/montagne.jpg'); background-size: cover;">
         <div class="post__title">
@@ -145,7 +147,7 @@
         </div>
       </div>
     </section>
-    <section class="contact">
+    <section id="contact" class="contact">
       <form action="" method="get" class="form">
         <div class="form__responsive">
           <div class="form__input">
@@ -195,35 +197,34 @@
           </div>
         </div>
       </div>
-
-      
     </section>
 
 
   </main>
   <div class="button_container" id="toggle">
-    <span class="top"></span>
-    <span class="middle"></span>
-    <span class="bottom"></span>
-  </div>
-  <div class="overlay" id="overlay">
-    <nav class="overlay-menu">
-      <ul>
-        <li ><a href="#">Homepage</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Projets</a></li>
-        <li><a href="#">Exemple</a></li>
-        <li><a href="#">Contact</a></li>
-        <li class="social">
-          <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-          </li>
-      </ul>
-    </nav>
-  </div>
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+    </div>
+    <div class="overlay" id="overlay">
+      <nav class="overlay-menu">
+        <ul>
+          <li ><a href="#homepage">Homepage</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#exemple">Exemple</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="social">
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+ 
  
 
   <script src="js/app.js"></script>

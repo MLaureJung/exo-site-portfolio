@@ -2,9 +2,10 @@
     position: fixed;
     top: 0;
     left: 0;
+    padding-bottom: 25px;
     width: 100%;
     display: flex; 
-    margin-top: 25px;
+    padding-top: 25px;
     &__logo {
         margin-left: 25px;
         text-transform: uppercase;
@@ -17,3 +18,14 @@
         }
     }
 }
+
+.sticky {
+    position: fixed;
+    background: $color-back;
+    opacity: 0.9;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+  }
