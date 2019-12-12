@@ -66,19 +66,19 @@
     
     li {
       animation: fadeInRight .5s ease forwards;
-      animation-delay: .35s;
+      animation-delay: .60s;
       
       &:nth-of-type(2) {
-        animation-delay: .4s;
+        animation-delay: .55s;
       }
       &:nth-of-type(3) {
-        animation-delay: .45s;
-      }
-      &:nth-of-type(4) {
         animation-delay: .50s;
       }
+      &:nth-of-type(4) {
+        animation-delay: .45s;
+      }
       &:nth-of-type(5) {
-        animation-delay: .55s;
+        animation-delay: .4s;
       }
     }
   }
