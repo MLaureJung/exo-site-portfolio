@@ -2,7 +2,8 @@
 $args = [
   'post_type' => 'post',
   'post_per_page' => 4,
-  'order' => 'ASC'
+  'tag' => 'blog',
+  'order' => 'date'
 ];
 
 $wpqueryArticles = new WP_Query($args);
