@@ -48,11 +48,6 @@ var app = {
       return false;
     });
 
-    
-
-
-
-
   },
 
      

@@ -1,8 +1,10 @@
 .post {
+    position: relative;
     padding: 40px 40px;
     &__title {
         border-bottom: 3px solid $color-main;
         padding-bottom: 5px;
+        position: relative;
         h3 {
         font-size: $medium-font-size;
         text-transform: uppercase;
@@ -13,5 +15,65 @@
         font-weight: bold;
         margin-top: 30px;
         line-height: 30px;
+        position: relative;
     }
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+    }
+    &:nth-child(1){
+        .post__overlay {
+            background-color: rgb(91, 91, 235);
+        }
+    }
+    &:nth-child(2){
+        .post__overlay {
+            background-color: rgb(91, 235, 151);
+        }
+    }
+    &:nth-child(3){
+        .post__overlay {
+            background-color: rgb(245, 159, 241);
+           
+        }
+    }
+    &:nth-child(4){
+        .post__overlay {
+            background-color: rgb(245, 224, 133);
+        }
+    }
+    &:nth-child(5){
+        .post__overlay {
+            background-color: rgb(113, 219, 238);
+        }
+    }
+    &:nth-child(6){
+        .post__overlay {
+            background-color: rgb(252, 152, 112);
+        }
+    }
+
+    &:hover {
+        .post__overlay {
+            // opacity: 1;
+            // -webkit-animation: flash 1.5s;
+            animation: flash 1s;
+        }
+        @keyframes flash {
+            0% {
+                opacity: 1;
+                background: black;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+    }
+    
 }
