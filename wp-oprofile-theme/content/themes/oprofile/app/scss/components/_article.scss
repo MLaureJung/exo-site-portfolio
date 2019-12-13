@@ -61,7 +61,7 @@
         .post__overlay {
             // opacity: 1;
             // -webkit-animation: flash 1.5s;
-            animation: flash 1s;
+            animation: flash 1s forwards;
         }
         @keyframes flash {
             0% {
