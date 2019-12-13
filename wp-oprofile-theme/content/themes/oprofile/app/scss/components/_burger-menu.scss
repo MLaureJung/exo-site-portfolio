@@ -5,7 +5,7 @@
   height: $button-height;
   width: $button-width;
   cursor: pointer;
-  z-index: 100;
+  z-index: 999;
   transition: opacity .25s ease;
   
   &:hover {

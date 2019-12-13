@@ -14,6 +14,7 @@ var app = {
     });
 
     $('a[href^="#"]').click(function(){
+      $('#toggle').removeClass('active');
       $('#overlay').removeClass('open');
       $('#wrapper').removeClass('open');
     });
