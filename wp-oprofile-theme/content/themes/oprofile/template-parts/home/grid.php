@@ -2,7 +2,7 @@
     
    
     <section class="grids">
-      <div class="grids__row--first">
+      <div class="grids__row">
         <div class="grid">
           <div class="grid__title">
           <div class="grid__button">
@@ -26,7 +26,7 @@
           </div>
         </div>
       </div>
-      <div class="grids__row--second">
+      <div class="grids__row">
         <div class="grid">
           <div class="grid__title">
           <div class="grid__button">
@@ -50,7 +50,7 @@
           </div>
         </div>
       </div>
-      <div class="grids__row--third">
+      <div class="grids__row">
         <div class="grid">
           <div class="grid__title">
           <div class="grid__button">

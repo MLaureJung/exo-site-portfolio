@@ -4,8 +4,8 @@
         <h2 class="intro__title"><?php the_title(); ?></h2>
         <div class="intro__content"><?php the_content(); ?></div>
         <div class="intro__buttons">
-          <a href="" class="intro__button--moreinfo">En savoir plus <span>➜</span></a>
-          <a href="" class="intro__button--contact">Contact <span>➜</span></a>
+          <a href="#blog" class="intro__button--moreinfo">En savoir plus <span>➜</span></a>
+          <a href="#contact" class="intro__button--contact">Contact <span>➜</span></a>
         </div>
       </div>
     </section>
