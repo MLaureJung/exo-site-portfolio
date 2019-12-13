@@ -1,77 +1,27 @@
 
-    
-   
+<?php
+  $args = [
+    'post_type' => 'post',
+    'posts_per_page' => 6,
+    'tag' => 'grille',
+    'order' => 'relevance'
+  ];
+
+$wpqueryArticles = new WP_Query($args);
+
+?>
     <section class="grids">
-    
+      <?php if ($wpqueryArticles->have_posts()) : while ($wpqueryArticles->have_posts()) : $wpqueryArticles->the_post(); ?>
         <div class="grid">
           <div class="grid__title">
           <div class="grid__button">
             <i class="fa fa-user" aria-hidden="true"></i>
           </div>
-            <h3>Toujours à l'écoute</h3>
+            <h3><?php the_title(); ?></h3>
           </div>
           <div class="grid__content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <?php the_content(); ?>
           </div>
         </div>
-        <div class="grid">
-          <div class="grid__title">
-          <div class="grid__button">
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-          </div>
-            <h3>Pro-active</h3>
-          </div>
-          <div class="grid__content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-          </div>
-        </div>
-     
-     
-        <div class="grid">
-          <div class="grid__title">
-          <div class="grid__button">
-            <i class="fa fa-bullhorn" aria-hidden="true"></i>
-          </div>
-            <h3>Communicante</h3>
-          </div>
-          <div class="grid__content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-          </div>
-        </div>
-        <div class="grid">
-          <div class="grid__title">
-          <div class="grid__button">
-            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-          </div>
-            <h3>Des compétences reconnues</h3>
-          </div>
-          <div class="grid__content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-          </div>
-        </div>
-      
-     
-        <div class="grid">
-          <div class="grid__title">
-          <div class="grid__button">
-            <i class="fa fa-code" aria-hidden="true"></i>
-          </div>
-            <h3>Expérimentée</h3>
-          </div>
-          <div class="grid__content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-          </div>
-        </div>
-        <div class="grid">
-            <div class="grid__title">
-            <div class="grid__button">
-              <i class="fa fa-heart" aria-hidden="true"></i>
-            </div>
-            <h3>Avec passion</h3>
-          </div>
-          <div class="grid__content">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-          </div>
-        </div>
-    
+      <?php endwhile; endif; ?>
     </section>
