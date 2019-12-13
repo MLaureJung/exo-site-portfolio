@@ -140,8 +140,28 @@
   .social {
     width: 100%;
     text-align: center; 
+    position: relative; 
     a {
       margin: 0 2px;
+      padding: 7px 0;
+      position: relative;
+      &:hover:after,
+         &:focus:after,
+         &:active:after {
+           width: 100%;
+         }
+        
+        &:after {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 0%;
+          transform: translateX(-50%);
+          height: 3px;
+          background: $color-main;
+          transition: .35s;
+        }
     }
   
   }

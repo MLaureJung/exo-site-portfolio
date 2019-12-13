@@ -10,9 +10,6 @@
 
 </head>
 <body>
-
-
-
   <main id="wrapper">
     <header class="header">
       <h1 class="header__logo">oprofile</h1>
