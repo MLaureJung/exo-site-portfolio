@@ -28,10 +28,10 @@
 
 ?>
          <div class="social">
-          <a target="blank" href="www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-          <a target="blank" href="www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-          <a target="blank" href="www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-          <a target="blank" href="www.github.com"><i class="fa fa-github" aria-hidden="true"></i></a>
-          <a target="blank" href="www.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+          <a target="blank" href="http://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a target="blank" href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a target="blank" href="http://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a target="blank" href="http://www.github.com"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a target="blank" href="http://www.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
         </div>
     </div>

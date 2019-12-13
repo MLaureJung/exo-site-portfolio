@@ -29,6 +29,9 @@
 @media (min-width:700px){
    
     .intro {
+        &__container {
+        padding-left: 100px;
+        }
         &__title {
             width: 80%;
         }
@@ -40,14 +43,17 @@
   @media (min-width:1000px){
     .intro {
         &__container {
-            width: calc(90% - 200);
+            width: calc(90% - 400px);
             padding-top: 400px;
+            padding-left: 200px;
+            padding-right: 200px;
+           
         }
         &__title {
-            width: 40%;
+            width: 60%;
         }
         &__content {
-            width: 40%;
+            width: 60%;
         }
     }
   }
