@@ -12,7 +12,9 @@
 <body>
   <main id="wrapper">
     <header class="header">
-      <h1 class="header__logo">oprofile</h1>
+      <h1>
+        <a href="#homepage" class="header__logo">oprofile</a>
+      </h1>
       <div class="header__social">
         <ul >
           <li >
