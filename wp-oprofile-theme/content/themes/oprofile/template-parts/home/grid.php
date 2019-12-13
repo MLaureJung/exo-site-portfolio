@@ -2,7 +2,7 @@
     
    
     <section class="grids">
-      <div class="grids__row">
+    
         <div class="grid">
           <div class="grid__title">
           <div class="grid__button">
@@ -25,8 +25,8 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
           </div>
         </div>
-      </div>
-      <div class="grids__row">
+     
+     
         <div class="grid">
           <div class="grid__title">
           <div class="grid__button">
@@ -49,8 +49,8 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
           </div>
         </div>
-      </div>
-      <div class="grids__row">
+      
+     
         <div class="grid">
           <div class="grid__title">
           <div class="grid__button">
@@ -73,5 +73,5 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
           </div>
         </div>
-      </div>
+    
     </section>

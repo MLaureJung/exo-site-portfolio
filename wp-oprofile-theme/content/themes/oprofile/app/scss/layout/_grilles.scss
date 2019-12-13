@@ -13,9 +13,8 @@
 @media (min-width:500px){
     .grids {
         padding: 50px 50px;
-        &__row {
-            display: flex; 
-            justify-content: space-around;
-        }
+        display: flex; 
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
 }

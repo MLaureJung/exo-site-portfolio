@@ -1,5 +1,6 @@
 .grid {
     position: relative; 
+    width: 100%;
     border-bottom:1px solid $color-border;
     &__title {
         font-weight: bold; 
@@ -27,6 +28,7 @@
 
 @media (min-width:500px){
     .grid {
+        width: 50%;
         &__title {
             margin: 45px;
         }
