@@ -10,6 +10,12 @@ var app = {
       $(this).toggleClass('active');
       $('#overlay').toggleClass('open');
       $('#wrapper').toggleClass('open');
+      
+    });
+
+    $('a[href^="#"]').click(function(){
+      $('#overlay').removeClass('open');
+      $('#wrapper').removeClass('open');
     });
 
 

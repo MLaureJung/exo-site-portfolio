@@ -20,7 +20,7 @@
     $menu = wp_nav_menu([
       'theme_location' => 'home', // identifiant de l'emplacement de menu (déclaré dans functions.php)
       'container' => 'nav', // on souhaite une <nav> comme container (par défaut -> <div>)
-      'container_class' => 'overlay-menu', // on souhaite que notre container ai la classe 'navigation'
+      'container_class' => 'overlay-menu', // on souhaite que notre container ai la classe 'overlay-menu'
       'echo' => false // on ne souhaite pas afficher le menu (son code HTML), mais seulement le retourner
     ]);
 
