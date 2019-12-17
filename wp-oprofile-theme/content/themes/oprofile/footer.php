@@ -1,7 +1,8 @@
 
   
   <section id="contact" class="contact">
-      <form action="" method="get" class="form">
+    <?php echo do_shortcode('[contact-form-7 id="48" title="Contact form 1"]'); ?>
+      <!-- <form action="" method="get" class="form">
         <div class="form__responsive">
           <div class="form__input">
             <label for="name">Nom</label>
@@ -19,7 +20,7 @@
         <div class="form__submit">
           <button type="submit" >Envoyer</button>
         </div>
-      </form>
+      </form> -->
       <div class="details">
         <div class="details__email">
           <div class="details__email--button">
