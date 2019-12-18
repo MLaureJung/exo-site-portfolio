@@ -1,6 +1,10 @@
+<?php if (get_theme_mod('oprofile_footer_background')) : ?>
 
+<?php $color = get_theme_mod('oprofile_footer_background'); ?>
   
-  <section id="contact" class="contact">
+  <section id="contact" class="contact" style="background:<?= $color; ?>">
+
+
     <?php echo do_shortcode('[contact-form-7 id="48" title="Contact form 1"]'); ?>
       <!-- <form action="" method="get" class="form">
         <div class="form__responsive">
@@ -22,36 +26,56 @@
         </div>
       </form> -->
       <div class="details">
-        <div class="details__email">
-          <div class="details__email--button">
-            <i class="fa fa-envelope" aria-hidden="true"></i>
+        <?php if (get_theme_mod('oprofile_footer_email')) : ?>
+
+          <?php $email = get_theme_mod('oprofile_footer_email'); ?>
+
+          <div class="details__email">
+            <div class="details__email--button">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </div>
+            <div class="details__email--email">
+              <h4>Email</h4>
+              <h5><?= $email; ?></h5>
+            </div>
           </div>
-          <div class="details__email--email">
-            <h4>Email</h4>
-            <h5>kaplan@oprofile.ocl</h5>
+        <?php endif; ?>
+
+        <?php if (get_theme_mod('oprofile_footer_num')) : ?>
+          <?php $number = get_theme_mod('oprofile_footer_num'); ?>
+
+          <div class="details__phone">
+            <div class="details__phone--button">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <div class="details__phone--number">
+              <h4>Téléphone</h4>
+              <h5><?= $number; ?></h5>
+            </div>
           </div>
-        </div>
-        <div class="details__phone">
-          <div class="details__phone--button">
-            <i class="fa fa-phone" aria-hidden="true"></i>
+        <?php endif; ?>
+
+        <?php if (get_theme_mod('oprofile_footer_address')) : ?>
+
+          <?php
+          // https://www.php.net/manual/fr/function.nl2br.php    
+          $address = nl2br(get_theme_mod('oprofile_footer_address')); ?>
+
+
+          <div class="details__address">
+            <div class="details__address--button">
+              <i class="fa fa-home" aria-hidden="true"></i>
+            </div>
+            <div class="details__address--number">
+              <h4>Adresse</h4>
+              <h5><?= $address; ?></h5>
+            </div>
           </div>
-          <div class="details__phone--number">
-            <h4>Téléphone</h4>
-            <h5>+33 6 78 90 12 34</h5>
-          </div>
-        </div>
-        <div class="details__address">
-          <div class="details__address--button">
-            <i class="fa fa-home" aria-hidden="true"></i>
-          </div>
-          <div class="details__address--number">
-            <h4>Adresse</h4>
-            <h5>223 allée de la gare <br/>
-            44000 Nantes</h5>
-          </div>
-        </div>
+        <?php endif; ?>
+
       </div>
     </section>
+    <?php endif; ?>
 
 
   </main>
