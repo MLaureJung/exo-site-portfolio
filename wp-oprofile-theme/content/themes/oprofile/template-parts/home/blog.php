@@ -21,3 +21,12 @@ $wpqueryArticles = new WP_Query($args);
     </article>
    <?php endwhile; endif; ?>
 </section>
+
+<?php if (get_theme_mod('showcase-page')) : ?>
+          <?php $page = get_theme_mod('showcase-page'); ?>
+
+          <section>
+            <h1 style="background: red"><?= get_the_title($page); ?></h1>
+          </section>
+
+<?php endif; ?>
