@@ -1,4 +1,4 @@
-<?php if (get_theme_mod('oprofile_footer_background')) : ?>
+
 
 <?php $color = get_theme_mod('oprofile_footer_background'); ?>
   
@@ -75,7 +75,7 @@
 
       </div>
     </section>
-    <?php endif; ?>
+
 
 
   </main>

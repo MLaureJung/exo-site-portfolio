@@ -83,6 +83,15 @@ if (!function_exists('oprofile_customize_register')) {
         );
 
         $wp_customize->add_setting(
+            'oprofile_footer_display',
+            [
+                'default' => ''
+            ]
+        );
+
+        
+
+        $wp_customize->add_setting(
             'oprofile_footer_email',
             [
                 'default' => 'loris@oclock.local'
@@ -109,6 +118,7 @@ if (!function_exists('oprofile_customize_register')) {
                 'default' => '+33 6 66 66 66 66'
             ]
         );
+        
 
         $wp_customize->add_control(
             'oprofile_footer_num',
@@ -124,13 +134,6 @@ if (!function_exists('oprofile_customize_register')) {
             ]
         );
 
-        $wp_customize->add_setting(
-            'oprofile_footer_background',
-            [
-                'default' => '#FF0000'
-            ]
-        );
-
         $wp_customize->add_control(
             'oprofile_footer_address',
             [
@@ -143,6 +146,13 @@ if (!function_exists('oprofile_customize_register')) {
                 // Description affichée dans l'UI
                 'description' => 'L\'adresse postale affichée dans le pied de page',
                 
+            ]
+        );
+
+        $wp_customize->add_setting(
+            'oprofile_footer_background',
+            [
+                'default' => '#FF0000'
             ]
         );
         
