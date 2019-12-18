@@ -35,7 +35,7 @@ if (!function_exists('oprofile_customize_register')) {
         );
 
 
-
+        
 
 
         $wp_customize->add_section(
@@ -48,6 +48,7 @@ if (!function_exists('oprofile_customize_register')) {
                 'panel' => 'oprofile_theme_panel'
             ]
         );
+
 
         // Troisième étape : ajouter un setting et son control
 
@@ -88,8 +89,19 @@ if (!function_exists('oprofile_customize_register')) {
                 'default' => ''
             ]
         );
-
         
+         $wp_customize->add_control( 'oprofile_footer_display', array(
+            'label'      => 'Cacher le pied de page',
+            'section'    => 'oprofile_footer',
+            'settings'   => 'oprofile_footer_display',
+            'type'       => 'checkbox',
+            'priority'   => 40,
+        ));
+         
+
+            
+
+
 
         $wp_customize->add_setting(
             'oprofile_footer_email',

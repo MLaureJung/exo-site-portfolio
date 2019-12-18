@@ -49,6 +49,23 @@ var app = {
       return false;
     });
 
+
+    
+    wp.customize( 'oprofile_footer_email', function( value ) {
+	
+      value.bind( function( to ) {
+    
+        if ( true === to ) {
+          $( '#contat' ).removeClass( 'hidden' );
+        } else {
+          $( '#contact' ).addClass( 'hidden' );
+        }
+    
+      });
+      
+    });
+    
+
    
 
   },
