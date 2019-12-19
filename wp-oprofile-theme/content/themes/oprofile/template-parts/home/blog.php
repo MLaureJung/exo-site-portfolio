@@ -14,6 +14,7 @@ $wpqueryArticles = new WP_Query($args);
       <div class="post__overlay"></div>  
       <div class="post__title">
           <h3><?php the_title(); ?></h3>
+          <?php do_action('mon_hook_custom'); ?>
         </div>
         <div class="post__content">
           <?php the_content(); ?>

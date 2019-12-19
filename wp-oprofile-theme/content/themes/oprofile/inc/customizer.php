@@ -39,7 +39,7 @@ if (!function_exists('oprofile_customize_register')) {
             // Add color scheme setting and control.
             $wp_customize->add_setting( 'showcase-page' , array(
                 'default'           => '',
-                'sanitize_callback' => 'absint'
+               
             ) );
     
             $wp_customize->add_control( 'showcase-page' , array(
