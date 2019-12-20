@@ -1,0 +1,45 @@
+// Pour charger les fichiers de font de FA
+$fa-font-path: '~font-awesome/fonts';
+
+// Breakpoints
+$breakpoint-medium: 600px;
+$breakpoint-large: 800px;
+$breakpoint-extra-large: 1200px;
+
+// Fonts (family, size)
+$font-size: 16px;
+$font-size-medium: 18px;
+$font-size-large: 20px;
+
+$font-family-content: 'Roboto', sans-serif;
+$font-family-title: 'Roboto Slab', serif;
+$font-family-fallback: 'Helvetica', Arial, sans-serif;
+
+// Couleurs (hexa puis attribution)
+$white: #FFF;
+$black: #000;
+$lightblue: #6FB4FD;
+$lightpurple: #8071FC;
+$darkblue: #242943;
+
+$posts-bg-colors: (
+    1: #7EC6DF,
+    2: #5D6F79,
+    3: #E8978D,
+    4: #E7B788,
+    5: #8EA9E8,
+    6: #87C5A4
+);
+
+$color-text: $white;
+$color-text-alt: $black;
+$color-brand: $lightblue;
+$color-brand-alt: $lightpurple;
+$color-bg: $white;
+$color-bg-alt: $black;
+$color-bg-footer: $darkblue;
+
+// Animations
+$duration-slow: 1s;
+$duration-medium: 0.5s;
+$duration-fast: 0.2s;

@@ -1,77 +1,97 @@
 require('jquery.scrollex');
 
 var app = {
-  init: function () {
 
-
+  init: function() {
     console.log('init');
 
-    $('#toggle').click(function () {
-      $(this).toggleClass('active');
-      $('#overlay').toggleClass('open');
-      $('#wrapper').toggleClass('open');
-      
-    });
+    // On cible nos éléments
+    app.$body = $('body');
+    app.$banner = $('.banner');
+    app.$header = $('.header');
 
-    $('a[href^="#"]').click(function(){
-      $('#toggle').removeClass('active');
-      $('#overlay').removeClass('open');
-      $('#wrapper').removeClass('open');
-    });
+    // On écoute l'événement click sur les éléments "ui-button"
+    $('.ui-button').on('click', app.handleToggleMenu);
 
-    
-    var stickyNav = function () {
-      var scrollTop = $(window).scrollTop(); // our current vertical position from the top
+    // On va executer une méthode pour gérer l'apparence de notre header
+    app.enableScrollex();
 
-      if (scrollTop > 100) {
-        $('.header').addClass('sticky');
-      } else {
-        $('.header').removeClass('sticky');
-      }
-    };
-
-    stickyNav();
-    // and run it again every time you scroll
-    $(window).scroll(function () {
-      stickyNav();
-    });
-
-
-    
-    $('a[href^="#"]').click(function(){
-      var the_id = $(this).attr("href");
-      if (the_id === '#') {
-        return;
-      }
-      $('html, body').animate({
-        scrollTop:$(the_id).offset().top-$('.header').outerHeight()
-      }, 'slow');
-      return false;
-    });
-
-
-    
-    wp.customize( 'oprofile_footer_email', function( value ) {
-	
-      value.bind( function( to ) {
-    
-        if ( true === to ) {
-          $( '#contat' ).removeClass( 'hidden' );
-        } else {
-          $( '#contact' ).addClass( 'hidden' );
-        }
-    
-      });
-      
-    });
-    
-
-   
+    // On cible tous les a dont le href comporte une ancre
+    // sauf ceux qui on une ancre vide
+    $('a[href*="#"]:not([href="#"])').on('click', app.handleSmoothScroll);
 
   },
 
-     
+  handleToggleMenu: function(event) {
 
+    // on annule le comportement par défaut (on annule l'action du click sur le lien)
+    event.preventDefault();
+
+    console.log('tu as cliqué !');
+
+    // on "toggle" notre classe "menu-visible" sur le body
+    // https://api.jquery.com/toggleclass/
+    app.$body.toggleClass('menu-visible');
+
+
+  },
+
+  enableScrollex: function() {
+    // https://www.npmjs.com/package/jquery.scrollex
+    app.$banner.scrollex({
+      leave: app.setHeaderFixed,
+      enter: app.setHeaderUnfixed
+    })
+  },
+
+  setHeaderFixed: function() {
+    console.log('Je fixe mon header !');
+    // https://api.jquery.com/addClass/
+    app.$header.addClass('fixed');
+  },
+
+  setHeaderUnfixed: function() {
+    console.log('Je défixe mon header !');
+    // https://api.jquery.com/removeClass/
+    app.$header.removeClass('fixed');
+  },
+
+  handleSmoothScroll: function(event) {
+
+    // On annule le comportement par défaut
+    event.preventDefault();
+
+    // On récupère la cible de notre événement (l'élément cliqué)
+    var elementClicked = event.target;
+    console.log(elementClicked);
+
+    // On récupère le hash (#)
+    var elementHash = elementClicked.hash;
+    console.log(elementHash);
+
+    // On récupère la valeur du href (et donc l'id de la section à cibler en jQuery)
+    var $elementTarget = $(elementHash);
+    console.log($elementTarget);
+
+    // on vérifie que l'élément ciblé existe
+    if ($elementTarget.length) {
+
+      // on calcule la position verticale de l'élément
+      var targetPosition = $elementTarget.offset().top;
+      console.log(targetPosition);
+
+      // On scroll jusqu'à l'élément
+
+      // https://api.jquery.com/animate/
+      $('html, body').animate(
+        {
+          // on scroll jusqu'à l'element (en tenant compte de la hauteur du header)
+          scrollTop: targetPosition - app.$header.height()
+        },
+        1500
+      );
+    }
+  }
 };
 
 $(app.init);

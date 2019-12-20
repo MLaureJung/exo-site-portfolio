@@ -1,21 +1,33 @@
-@import url(https://fonts.googleapis.com/css?family=Vollkorn|Roboto);
-
-html {
-    font-size: $default-font-size;
-    color: $color-main;
-}
-
-body,
-input {
-    font-family: $font-family;
-}
-
-// body {
-//     border: 20px solid $main-color;
-//     padding: 2.5em 2em 1.5em 3em;
-// }
-
-a {
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    @media (min-width: $breakpoint-extra-large) {
+      width: $breakpoint-extra-large;
+      margin: auto;
+      background-color: lighten($color-bg-footer, 70);
+    }
+  
+    &.menu-visible {
+      .wrapper {
+        filter: blur(5px);
+      }
+      .menu {
+        visibility: visible;
+      }
+    }
+  }
+  
+  a {
     text-decoration: none;
-    color: $color-main;
-}
+    color: $color-text;
+  }
+  
+  strong {
+    font-weight: bold;
+  }
+  
+  em {
+    font-style: italic;
+  }

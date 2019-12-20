@@ -1,300 +1,256 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpack</title>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>oProfile</title>
     <link rel="stylesheet" href="css/style.css" />
-</head>
-
-<body>
-
-
-
-    <main id="wrapper">
-        <header class="header">
-            <h1>
-            <a href="#homepage" class="header__logo">oprofile</a>
-            </h1>
-            <div class="header__social">
-                <ul>
-                    <li>
-                        <a target="blank" href="http://www.facebook.com"><i class="fa fa-facebook"
-                                aria-hidden="true"></i></a>
-                        <a target="blank" href="http://www.twitter.com"><i class="fa fa-twitter"
-                                aria-hidden="true"></i></a>
-                        <a target="blank" href="http://www.instagram.com"><i class="fa fa-instagram"
-                                aria-hidden="true"></i></a>
-                        <a target="blank" href="http://www.github.com"><i class="fa fa-github"
-                                aria-hidden="true"></i></a>
-                        <a target="blank" href="http://www.google.com"><i class="fa fa-google-plus"
-                                aria-hidden="true"></i></a>
-                    </li>
-                </ul>
-            </div>
-        </header>
-        <section id="homepage" class="intro">
-            <div class="intro__container">
-                <h2 class="intro__title">Hello, je suis Miss Kaplan</h2>
-                <p class="intro__content">Une développeuse WP Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Provident expedita doloribus hic eos maiores corporis error sed voluptates libero minus.</p>
-                <div class="intro__buttons">
-                    <a href="#blog" class="intro__button--moreinfo">En savoir plus <span>➜</span></a>
-                    <a href="#contact" class="intro__button--contact">Contact <span>➜</span></a>
-                </div>
-            </div>
-        </section>
-        <section id="blog" class="posts">
-            <article class="post" style=" background-image: url('/images/neige.jpg'); background-size: cover;">
-                <div class="post__overlay"></div>
-                <div class="post__title">
-                    <h3>Winter view</h3>
-                </div>
-                <div class="post__content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut modi omnis sed beatae obcaecati
-                        eaque. Minima tempora sequi repellendus, deserunt perspiciatis distinctio reiciendis. Labore
-                        accusamus, atque repellat voluptatum non mollitia quo repudiandae debitis sed. Voluptate
-                        soluta magni exercitationem corrupti a aperiam tempora animi quam voluptas natus, eligendi
-                        expedita at ea, repellendus asperiores. Earum maxime magnam necessitatibus, voluptatum
-                        provident cumque tempora, libero esse possimus minima exercitationem quo perspiciatis
-                        tenetur, dolor ipsum veritatis doloribus deleniti quis atque magni officia similique debitis
-                        labore?</p>
-                </div>
-            </article>
-            <article class="post" style=" background-image: url('/images/fete.jpg'); background-size: cover;">
-                <div class="post__overlay"></div>
-                <div class="post__title">
-                    <h3>Party tour</h3>
-                </div>
-                <div class="post__content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut modi omnis sed beatae obcaecati
-                        eaque. Minima tempora sequi repellendus, deserunt perspiciatis distinctio reiciendis. Labore
-                        accusamus, atque repellat voluptatum non mollitia quo repudiandae debitis sed. Voluptate
-                        soluta magni exercitationem corrupti a aperiam tempora animi quam voluptas natus, eligendi
-                        expedita at ea, repellendus asperiores. Earum maxime magnam necessitatibus, voluptatum
-                        provident cumque tempora, libero esse possimus minima exercitationem quo perspiciatis
-                        tenetur, dolor ipsum veritatis doloribus deleniti quis atque magni officia similique debitis
-                        labore?</p>
-                </div>
-            </article>
-            <article class="post" style=" background-image: url('/images/arbre.jpg'); background-size: cover;">
-                <div class="post__overlay"></div>
-                <div class="post__title">
-                    <h3>On the fly</h3>
-                </div>
-                <div class="post__content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut modi omnis sed beatae obcaecati
-                        eaque. Minima tempora sequi repellendus, deserunt perspiciatis distinctio reiciendis. Labore
-                        accusamus, atque repellat voluptatum non mollitia quo repudiandae debitis sed. Voluptate
-                        soluta magni exercitationem corrupti a aperiam tempora animi quam voluptas natus, eligendi
-                        expedita at ea, repellendus asperiores. Earum maxime magnam necessitatibus, voluptatum
-                        provident cumque tempora, libero esse possimus minima exercitationem quo perspiciatis
-                        tenetur, dolor ipsum veritatis doloribus deleniti quis atque magni officia similique debitis
-                        labore?</p>
-                </div>
-            </article>
-            <article class="post" style=" background-image: url('/images/soleil.jpg'); background-size: cover;">
-                <div class="post__overlay"></div>
-                <div class="post__title">
-                    <h3>Sunlight</h3>
-                </div>
-                <div class="post__content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut modi omnis sed beatae obcaecati
-                        eaque. Minima tempora sequi repellendus, deserunt perspiciatis distinctio reiciendis. Labore
-                        accusamus, atque repellat voluptatum non mollitia quo repudiandae debitis sed. Voluptate
-                        soluta magni exercitationem corrupti a aperiam tempora animi quam voluptas natus, eligendi
-                        expedita at ea, repellendus asperiores. Earum maxime magnam necessitatibus, voluptatum
-                        provident cumque tempora, libero esse possimus minima exercitationem quo perspiciatis
-                        tenetur, dolor ipsum veritatis doloribus deleniti quis atque magni officia similique debitis
-                        labore?</p>
-                </div>
-            </article>
-            <article class="post" style=" background-image: url('/images/rue.jpg'); background-size: cover;">
-                <div class="post__overlay"></div>
-                <div class="post__title">
-                    <h3>L'agence d'à côté</h3>
-                </div>
-                <div class="post__content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut modi omnis sed beatae obcaecati
-                        eaque. Minima tempora sequi repellendus, deserunt perspiciatis distinctio reiciendis. Labore
-                        accusamus, atque repellat voluptatum non mollitia quo repudiandae debitis sed. Voluptate
-                        soluta magni exercitationem corrupti a aperiam tempora animi quam voluptas natus, eligendi
-                        expedita at ea, repellendus asperiores. Earum maxime magnam necessitatibus, voluptatum
-                        provident cumque tempora, libero esse possimus minima exercitationem quo perspiciatis
-                        tenetur, dolor ipsum veritatis doloribus deleniti quis atque magni officia similique debitis
-                        labore?</p>
-                </div>
-            </article>
-            <article class="post" style=" background-image: url('/images/montagne.jpg'); background-size: cover;">
-                <div class="post__overlay"></div>
-                <div class="post__title">
-                    <h3>Horizon</h3>
-                </div>
-                <div class="post__content">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut modi omnis sed beatae obcaecati
-                        eaque. Minima tempora sequi repellendus, deserunt perspiciatis distinctio reiciendis. Labore
-                        accusamus, atque repellat voluptatum non mollitia quo repudiandae debitis sed. Voluptate
-                        soluta magni exercitationem corrupti a aperiam tempora animi quam voluptas natus, eligendi
-                        expedita at ea, repellendus asperiores. Earum maxime magnam necessitatibus, voluptatum
-                        provident cumque tempora, libero esse possimus minima exercitationem quo perspiciatis
-                        tenetur, dolor ipsum veritatis doloribus deleniti quis atque magni officia similique debitis
-                        labore?</p>
-                </div>
-            </article>
-        </section>
-
-
-        <section class="grids">
-                <div class="grid">
-                    <div class="grid__title">
-                        <div class="grid__button">
-                            <i class="fa fa-user" aria-hidden="true"></i>
-                        </div>
-                        <h3>Toujours à l'écoute</h3>
-                    </div>
-                    <div class="grid__content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    </div>
-                </div>
-                <div class="grid">
-                    <div class="grid__title">
-                        <div class="grid__button">
-                            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                        </div>
-                        <h3>Pro-active</h3>
-                    </div>
-                    <div class="grid__content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    </div>
-                </div>
-                <div class="grid">
-                    <div class="grid__title">
-                        <div class="grid__button">
-                            <i class="fa fa-bullhorn" aria-hidden="true"></i>
-                        </div>
-                        <h3>Communicante</h3>
-                    </div>
-                    <div class="grid__content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    </div>
-                </div>
-                <div class="grid">
-                    <div class="grid__title">
-                        <div class="grid__button">
-                            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                        </div>
-                        <h3>Des compétences reconnues</h3>
-                    </div>
-                    <div class="grid__content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    </div>
-                </div>
-                <div class="grid">
-                    <div class="grid__title">
-                        <div class="grid__button">
-                            <i class="fa fa-code" aria-hidden="true"></i>
-                        </div>
-                        <h3>Expérimentée</h3>
-                    </div>
-                    <div class="grid__content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    </div>
-                </div>
-                <div class="grid">
-                    <div class="grid__title">
-                        <div class="grid__button">
-                            <i class="fa fa-heart" aria-hidden="true"></i>
-                        </div>
-                        <h3>Avec passion</h3>
-                    </div>
-                    <div class="grid__content">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    </div>
-                </div>
-        </section>
-        <section id="contact" class="contact">
-            <form action="" method="get" class="form">
-                <div class="form__responsive">
-                    <div class="form__input">
-                        <label for="name">Nom</label>
-                        <input type="text" name="name" id="name" required>
-                    </div>
-                    <div class="form__input">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" required>
-                    </div>
-                </div>
-                <div class="form__input">
-                    <label for="message">Message</label>
-                    <textarea name="user_message" id="message"></textarea>
-                </div>
-                <div class="form__submit">
-                    <button type="submit">Envoyer</button>
-                </div>
-            </form>
-            <div class="details">
-                <div class="details__email">
-                    <div class="details__email--button">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </div>
-                    <div class="details__email--email">
-                        <h4>Email</h4>
-                        <h5>kaplan@oprofile.ocl</h5>
-                    </div>
-                </div>
-                <div class="details__phone">
-                    <div class="details__phone--button">
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                    </div>
-                    <div class="details__phone--number">
-                        <h4>Téléphone</h4>
-                        <h5>+33 6 78 90 12 34</h5>
-                    </div>
-                </div>
-                <div class="details__address">
-                    <div class="details__address--button">
-                        <i class="fa fa-home" aria-hidden="true"></i>
-                    </div>
-                    <div class="details__address--number">
-                        <h4>Adresse</h4>
-                        <h5>223 allée de la gare <br />
-                            44000 Nantes</h5>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-    </main>
-    <div class="button_container" id="toggle">
-        <span class="top"></span>
-        <span class="middle"></span>
-        <span class="bottom"></span>
-    </div>
-    <div class="overlay" id="overlay">
-        <nav class="overlay-menu">
-            <ul>
-                <li><a href="#homepage">Homepage</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#exemple">Exemple</a></li>
-                <li><a href="#contact">Contact</a></li>
-
-            </ul>
-        </nav>
-        <div class="social">
-            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="logo">
+          <a href="#">oprofile</a>
         </div>
+        <div class="social-nav">
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-google-plus" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+        <a href="#" class="ui-button open-menu">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+      </header>
+      <main class="main">
+        <section
+          class="banner"
+          style="background-image: url('images/see.jpg');"
+        >
+          <div class="intro">
+            <h1 class="intro__title">Hello, je suis Miss Kaplan</h1>
+            <p class="intro__content">
+              Une developpeuse Wordpress amet consectetur adipisicing elit. Quod
+              maxime expedita tempore aspernatur provident magnam omnis dicta.
+              Dolorum reprehenderit minima distinctio, voluptatum mollitia eaque
+              sequi
+            </p>
+          </div>
+          <div class="action-bar">
+            <a href="#grid" class="action-button">En savoir plus</a>
+            <a href="#contact-form" class="action-button">Contact</a>
+          </div>
+        </section>
+        <section class="posts">
+          <article
+            class="post"
+            style="background-image: url('images/arbre.jpg');"
+          >
+            <h2 class="post__title">Winter View</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
+              saepe in adipisci ratione! Libero, neque similique? Necessitatibus
+              iste sunt exercitationem praesentium modi enim, vitae dolorum eos
+              vel a assumenda magni.
+            </p>
+          </article>
+          <article
+            class="post"
+            style="background-image: url('images/montagne.jpg');"
+          >
+            <h2 class="post__title">Winter View</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
+              saepe in adipisci ratione! Libero, neque similique? Necessitatibus
+              iste sunt exercitationem praesentium modi enim, vitae dolorum eos
+              vel a assumenda magni.
+            </p>
+          </article>
+          <article
+            class="post"
+            style="background-image: url('images/fete.jpg');"
+          >
+            <h2 class="post__title">Winter View</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
+              saepe in adipisci ratione! Libero, neque similique? Necessitatibus
+              iste sunt exercitationem praesentium modi enim, vitae dolorum eos
+              vel a assumenda magni.
+            </p>
+          </article>
+          <article
+            class="post"
+            style="background-image: url('images/rue.jpg');"
+          >
+            <h2 class="post__title">Winter View</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
+              saepe in adipisci ratione! Libero, neque similique? Necessitatibus
+              iste sunt exercitationem praesentium modi enim, vitae dolorum eos
+              vel a assumenda magni.
+            </p>
+          </article>
+          <article
+            class="post"
+            style="background-image: url('images/neige.jpg');"
+          >
+            <h2 class="post__title">Winter View</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
+              saepe in adipisci ratione! Libero, neque similique? Necessitatibus
+              iste sunt exercitationem praesentium modi enim, vitae dolorum eos
+              vel a assumenda magni.
+            </p>
+          </article>
+          <article
+            class="post"
+            style="background-image: url('images/soleil.jpg');"
+          >
+            <h2 class="post__title">Winter View</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
+              saepe in adipisci ratione! Libero, neque similique? Necessitatibus
+              iste sunt exercitationem praesentium modi enim, vitae dolorum eos
+              vel a assumenda magni.
+            </p>
+          </article>
+        </section>
+        <section class="grid" id="grid">
+          <div class="grid__item">
+            <i class="grid__item__icon fa fa-user" aria-hidden="true"></i>
+            <h3 class="grid__item__title">Toujours à l'écoute</h3>
+            <p class="grid__item__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="grid__item">
+            <i
+              class="grid__item__icon fa fa-arrow-right"
+              aria-hidden="true"
+            ></i>
+            <h3 class="grid__item__title">Toujours à l'écoute</h3>
+            <p class="grid__item__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="grid__item">
+            <i class="grid__item__icon fa fa-bullhorn" aria-hidden="true"></i>
+            <h3 class="grid__item__title">Toujours à l'écoute</h3>
+            <p class="grid__item__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="grid__item">
+            <i
+              class="grid__item__icon fa fa-graduation-cap"
+              aria-hidden="true"
+            ></i>
+            <h3 class="grid__item__title">Toujours à l'écoute</h3>
+            <p class="grid__item__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="grid__item">
+            <i class="grid__item__icon fa fa-code" aria-hidden="true"></i>
+            <h3 class="grid__item__title">Toujours à l'écoute</h3>
+            <p class="grid__item__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="grid__item">
+            <i class="grid__item__icon fa fa-heart" aria-hidden="true"></i>
+            <h3 class="grid__item__title">Toujours à l'écoute</h3>
+            <p class="grid__item__content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer" id="contact-form">
+        <form action="#" class="contact-form">
+          <div class="field is-half">
+            <label for="name">Nom</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="field is-half">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <div class="field">
+            <input type="submit" value="Envoyer" />
+          </div>
+        </form>
+        <address class="contact-info">
+          <div class="contact-info__part">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <h4 class="contact-info__part__label">Email</h4>
+            <a
+              href="mailto:kaplan@oprofile.ocl"
+              class="contact-info__part__content is-email"
+              >kaplan@oprofile.ocl</a
+            >
+          </div>
+          <div class="contact-info__part">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <h4 class="contact-info__part__label">Téléphone</h4>
+            <a href="tel:+33678901234" class="contact-info__part__content"
+              >+33 6 78 90 12 34</a
+            >
+          </div>
+          <div class="contact-info__part">
+            <i class="fa fa-home" aria-hidden="true"></i>
+            <h4 class="contact-info__part__label">Adresse</h4>
+            <p class="contact-info__part__content">223 allée de la gare<br />44000 Nantes</p
+            >
+          </div>
+        </address>
+      </footer>
     </div>
 
-
+    <div class="menu">
+      <a href="#" class="ui-button close-menu">
+        <i class="fa fa-close" aria-hidden="true"></i>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li class="main-nav__item"><a href="#">Homepage</a></li>
+          <li class="main-nav__item"><a href="#">Blog</a></li>
+          <li class="main-nav__item"><a href="#">Projets</a></li>
+          <li class="main-nav__item"><a href="#">Exemple</a></li>
+          <li class="main-nav__item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social-nav">
+        <ul>
+          <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
 
     <script src="js/app.js"></script>
-</body>
-
+  </body>
 </html>

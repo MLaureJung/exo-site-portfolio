@@ -1,47 +1,47 @@
-
 @charset 'UTF-8';
 
 // 1. Abstracts
 @import
-    'abstracts/variables';
-
+    'abstracts/vars';
 
 // 2. Vendors
-@import
-    '~reset-css/sass/reset';
 
-$fa-font-path: '~font-awesome/fonts';
-@import '~font-awesome/scss/font-awesome';
+@import
+    '~reset-css/sass/reset',
+    '~font-awesome/scss/font-awesome';
 
 
 // 3. Base
 @import
-    'base/base';
+    'base/animations',
+    'base/base',
+    'base/typo';
 
 // 4. Layout
 @import
-    'layout/articles',
-    'layout/main',
+    'layout/wrapper',
     'layout/header',
-    'layout/grilles',
-    'layout/contact';
-
-    
+    'layout/banner',
+    'layout/posts',
+    'layout/grid',
+    'layout/footer',
+    'layout/menu';
 
 // 5. Components
 @import
-    'components/article',
+    'components/logo',
+    'components/ui-button',
+    'components/action-button',
     'components/intro',
-    'components/burger-menu',
-    'components/buttons',
-    'components/grille',
-    'components/form',
-    'components/details';
+    'components/post',
+    'components/grid',
+    'components/field',
+    'components/contact-form',
+    'components/contact-info',
+    'components/main-nav',
+    'components/social_nav';
 
+// 6. Shame
 
-// 6. Pages
-
-
-// 7. Shame
 @import
     'shame';

@@ -1,33 +1,28 @@
 .header {
-    position: fixed;
+    background-color: black;
+    position: absolute;
     top: 0;
+    right: 0;
     left: 0;
-    transition: all 0.4s ease-in-out;
-    background: transparent;
-    padding-bottom: 25px;
-    width: 100%;
-    display: flex; 
-    padding-top: 25px;
-    z-index: 998;
-    &__logo {
-        margin-left: 25px;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
-    &__social {
-        margin-left: calc(50% - 177px);
-        a {
-            padding: 0 2px;
-        }
-    }
-    &.sticky {
-        position: fixed;
-        background: $color-back;
-        width: 100%;
-        left: 0;
-        top: 0;
-        z-index: 100;
-        border-top: 0;
-      } 
-}
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+
+    z-index: 20;
+
+    @media(min-width:$breakpoint-extra-large) {
+        width: $breakpoint-extra-large;
+        margin: auto;
+    }
+
+    &.fixed {
+        position: fixed;
+        background-image: linear-gradient(
+            to right,
+            $color-brand,
+            $color-brand-alt
+        );
+    }
+}
